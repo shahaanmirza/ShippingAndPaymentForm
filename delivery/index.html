@@ -30,7 +30,8 @@
             </li>
             <li>
               <label for="state">State</label>
-              <select name="state" id="state" size="50" required>
+              <input type="text" list="state" name="state" id="state" required/>
+              <datalist name="state" id="state" aria-hidden="true">
               	<option value="AL">Alabama</option>
               	<option value="AK">Alaska</option>
               	<option value="AZ">Arizona</option>
@@ -82,7 +83,7 @@
               	<option value="WV">West Virginia</option>
               	<option value="WI">Wisconsin</option>
               	<option value="WY">Wyoming</option>
-              </select>
+              </datalist>
             </li>
             <li>
               <label for="zip">Zipcode</label>
