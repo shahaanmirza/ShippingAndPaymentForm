@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
     <title>Shipping and Delivery Form</title>
   </head>
   <body>
@@ -12,8 +13,25 @@
       <header>
         <h2>Hello, please complete delivery information.</h2>
       </header>
+<<<<<<< HEAD
       <form id="shipping" action="../payment/.">
         <fieldset name="shippingaddressform">
+=======
+      <form id="shipping" action="../payment/">
+        <fieldset name="deliverytypeform">
+          <ol>
+            <li>
+              <label for="standard_delivery">5-7 Business Days <b>[Free]</b></label>
+              <input type="radio" name="delivery_time" id="standard_delivery" value="standard_delivery" checked>
+            </li>
+            <li>
+              <label for="rushed_delivery">2-3 Business Days <b>[$15.00]</b></label>
+              <input type="radio" name="delivery_time" id="rushed_delivery" value="rushed_delivery">
+            </li>
+          </ol>
+        </fieldset>
+        <fieldset name="deliveryaddressform">
+>>>>>>> delivery_page
           <ol>
             <li>
               <label for="address">Street Address</label>
@@ -29,7 +47,8 @@
             </li>
             <li>
               <label for="state">State</label>
-              <select name="state" id="state" size="50" required>
+              <input type="text" list="state" name="state" id="state" required/>
+              <datalist name="state" id="state" aria-hidden="true">
               	<option value="AL">Alabama</option>
               	<option value="AK">Alaska</option>
               	<option value="AZ">Arizona</option>
@@ -81,32 +100,26 @@
               	<option value="WV">West Virginia</option>
               	<option value="WI">Wisconsin</option>
               	<option value="WY">Wyoming</option>
-              </select>
+              </datalist>
             </li>
             <li>
               <label for="zip">Zipcode</label>
-              <input type="text" name="zip" id="zip" required>
+              <input type="text" name="zip" id="zip" maxlength="5" required>
             </li>
           </ol>
         </fieldset>
-        <fieldset name="deliverytypeform">
-          <ol>
-            <li>
-              <label for="standard_delivery">5-7 Business Days</label>
-              <label for="standard_delivery">Free</label>
-              <input type="radio" name="delivery_time" id="standard_delivery" value="standard_delivery" checked>
-            </li>
-            <li>
-              <label for="rushed_delivery">2-3 Business Days</label>
-              <label for="rushed_delivery">$15.00</label>
-              <input type="radio" name="delivery_time" id="rushed_delivery" value="rushed_delivery">
-            </li>
-          </ol>
-        </fieldset>
+        <button type="submit" name="nav_to_payment">Continue to Payment</button>
       </form>
+<<<<<<< HEAD
       <a id="nav_to_delivery" href="../delivery">Return to Delivery</a>
       <a id="nav_to_payment" href="../payment/">Continue to Payment</a>
+=======
+      <a id="nav_to_delivery" href="../">Return to Login Page</a>
+>>>>>>> delivery_page
     </main>
+    <footer class="footer">
+      Photography Palace. Copywrite 2022, Shahaan Mirza. All rights reserved.
+    </footer>
     <script src="assets/js/site.js"></script>
   </body>
 </html>
